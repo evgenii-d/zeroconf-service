@@ -1,4 +1,4 @@
-"""Manages and registers a Zeroconf service with configurable settings."""
+"""Zeroconf service with interval updates."""
 import json
 import signal
 import socket
