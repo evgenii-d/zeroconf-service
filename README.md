@@ -1,6 +1,6 @@
 # Zeroconf Service
 
-Configurable Zeroconf service registration with automatic service updates at specified intervals.
+A configurable Zeroconf service registration with auto updates at specified intervals.
 
 Example `config.json`:
 
@@ -14,4 +14,30 @@ Example `config.json`:
     },
     "interval": 60
 }
+```
+
+## Installation
+
+Download project
+
+```bash
+git clone https://github.com/evgenii-d/zeroconf-service.git
+```
+
+Execute `setup_project.sh`
+
+```bash
+cd zeroconf-service && chmod +x ./scripts/setup.sh && ./scripts/setup.sh
+```
+
+Run app
+
+```bash
+./venv/bin/python -m src.main
+```
+
+(Optional) Create and enable a Systemd User Service
+
+```bash
+chmod +x ./scripts/install_service.sh && ./scripts/install_service.sh
 ```
