@@ -13,7 +13,6 @@ git clone https://github.com/evgenii-d/zeroconf-service.git
 Execute `setup_project.sh`
 
 ```bash
-cd zeroconf-service
 chmod +x ./scripts/setup_project.sh && ./scripts/setup_project.sh
 ```
 
