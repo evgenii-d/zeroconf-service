@@ -2,20 +2,6 @@
 
 A configurable Zeroconf service registration with auto updates at specified intervals.
 
-Example `config.json`:
-
-```json
-{
-    "type": "_http._tcp.local.",
-    "name": "my-service._http._tcp.local.",
-    "port": 8080,
-    "properties": {
-        "description": "My Zeroconf Service"
-    },
-    "interval": 60
-}
-```
-
 ## Installation
 
 Download project
@@ -41,4 +27,18 @@ Run app
 
 ```bash
 chmod +x ./scripts/install_service.sh && ./scripts/install_service.sh
+```
+
+### `config.json` example
+
+```json
+{
+    "type": "_http._tcp.local.",
+    "name": "my-service._http._tcp.local.",
+    "port": 8080,
+    "properties": {
+        "description": "My Zeroconf Service"
+    },
+    "interval": 60
+}
 ```
